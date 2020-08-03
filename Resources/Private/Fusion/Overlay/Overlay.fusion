@@ -1,0 +1,111 @@
+prototype(Sitegeist.CookieOptIn:Overlay.Component) < prototype(Neos.Fusion:Component) {
+
+    explainationsText = ${Translation.translate('explainations', '', [], 'Main', 'Sitegeist.CookieOptIn')}
+    explainationsText.@process.setPropertyValue = ${q(site).property('explainationsText')}
+    explainationsText.@process.setPropertyValue.@if.textChanged = ${q(site).property('explainationsText')}
+    explainationsText.@process.editable = Neos.Neos:ContentElementEditable {
+        property = 'explainationsText'
+        node = ${site}
+        tag = 'div'
+        @if.inBackend = ${!node.context.isLive && Configuration.setting('Sitegeist.CookieOptIn.editable')}
+    }
+    explainationsText.@process.elementWrapping = Neos.Neos:ContentElementWrapping {
+        node = ${site}
+        @if.inBackend = ${!node.context.isLive && Configuration.setting('Sitegeist.CookieOptIn.editable')}
+    }
+
+    detailsText = ${Translation.translate('details', '', [], 'Main', 'Sitegeist.CookieOptIn')}
+    introductionText = ${Translation.translate('introduction', '', [], 'Main', 'Sitegeist.CookieOptIn')}
+    closeText = ${Translation.translate('close', '', [], 'Main', 'Sitegeist.CookieOptIn')}
+
+    allOptInText = ${Translation.translate('all-opt-in', '', [], 'Main', 'Sitegeist.CookieOptIn')}
+    statisticOptInText = ${Translation.translate('statistic-opt-in', '', [], 'Main', 'Sitegeist.CookieOptIn')}
+    necessaryOptInText = ${Translation.translate('necessary-opt-in', '', [], 'Main', 'Sitegeist.CookieOptIn')}
+    necessaryDescriptionText = ${Translation.translate('necessary-description', '', [], 'Main', 'Sitegeist.CookieOptIn')}
+
+    dataprivacyUrl = ${Configuration.setting('Sitegeist.CookieOptIn.path.dataprivacyUrl')}
+    imprintUrl = ${Configuration.setting('Sitegeist.CookieOptIn.path.imprintUrl')}
+    cookieOverviewUrl = ${Configuration.setting('Sitegeist.CookieOptIn.path.cookieOverviewUrl')}
+
+    @context.cookieOverviewUrl = ${this.cookieOverviewUrl}
+    cookieOverviewLink = Neos.Fusion:Tag {
+        tagName = 'a'
+        content = ${Translation.translate('cookieoverview', '', [], 'Main', 'Sitegeist.CookieOptIn')}
+        attributes.href = ${cookieOverviewUrl}
+        attributes.class = 'social-opt-in__cookieoverview-url'
+        @if.urlExists = ${cookieOverviewUrl}
+    }
+
+    @context.dataprivacyUrl = ${this.dataprivacyUrl}
+    dataprivacyLink = Neos.Fusion:Tag {
+        tagName = 'a'
+        content = ${Translation.translate('dataprivacy', '', [], 'Main', 'Sitegeist.CookieOptIn')}
+        attributes.href = ${dataprivacyUrl}
+        attributes.class = 'social-opt-in__dataprivacy-url'
+        @if.urlExists = ${dataprivacyUrl}
+    }
+
+    @context.imprintUrl = ${this.imprintUrl}
+    imprintLink = Neos.Fusion:Tag {
+        tagName = 'a'
+        content = ${Translation.translate('imprint', '', [], 'Main', 'Sitegeist.CookieOptIn')}
+        attributes.href = ${imprintUrl}
+        attributes.class = 'social-opt-in__imprint-url'
+        @if.urlExists = ${imprintUrl}
+    }
+
+    @context.checkUrl = Neos.Neos:NodeUri {
+        node = ${q(node).get(0)}
+    }
+    @context.homeUrl = Neos.Neos:NodeUri {
+        node = ${q(site).get(0)}
+    }
+    imprintOrPrivacyUrl = ${((dataprivacyUrl != checkUrl && imprintUrl != checkUrl && cookieOverviewUrl != checkUrl) || homeUrl == checkUrl) ? 'false' : 'true'}
+
+    renderer = afx`
+        <section id="social-opt-in" data-imprint-privacy-url={props.imprintOrPrivacyUrl}>
+            {props.introductionText}
+            <div class="social-opt-in__buttons">
+                <div class="all-opt-in-wrapper social-opt-in-wrapper">
+                    <a id="all-opt-in-toggle" class="social-opt-in__button" href="#">
+                        {props.allOptInText}
+                    </a>
+                </div>
+                <div class="statistic-opt-in-wrapper social-opt-in-wrapper">
+                    <a id="statistic-opt-in-toggle" class="social-opt-in__button" href="#">
+                        {props.statisticOptInText}
+                    </a>
+                </div>
+                <div class="necessary-opt-in-wrapper social-opt-in-wrapper">
+                    <a id="necessary-opt-in-toggle" class="social-opt-in__button" href="#">
+                        {props.necessaryOptInText}
+                    </a>
+                    <span class="social-opt-in__button-description">
+                        {props.necessaryDescriptionText}
+                    </span>
+                </div>
+            </div>
+            <div class="social-opt-in__nav">
+                <ul>
+                    <li class="social-opt-in__details">
+                        <a href="#" id="social-opt-in__details-toggle">
+                            {props.detailsText}
+                        </a>
+                    </li>
+                    <li class="social-opt-in__dataprivacy">
+                        {props.dataprivacyLink}
+                    </li>
+                    <li class="social-opt-in__imprint">
+                        {props.imprintLink}
+                    </li>
+                </ul>
+            </div>
+            <div id="social-opt-in__details-text">
+                {props.explainationsText}
+                <div class="social-opt-in__cookieoverview">
+                    {props.cookieOverviewLink}
+                </div>
+            </div>
+        </section>
+    `
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="Sitegeist.CookieOptIn" source-language="de" datatype="plaintext" target-language="en">
+		<body>
+			<trans-unit id="dataprivacy" xml:space="preserve">
+        		<source>Datenschutz</source>
+        		<target xml:lang="en">Dataprivacy</target>
+			</trans-unit>
+			<trans-unit id="cookieoverview" xml:space="preserve">
+        		<source>Eine Übersicht aller verwendeten Cookies finden Sie hier</source>
+        		<target xml:lang="en">An overview of all used cookies you can find here</target>
+			</trans-unit>
+			<trans-unit id="imprint" xml:space="preserve">
+        		<source>Impressum</source>
+        		<target xml:lang="en">Imprint</target>
+			</trans-unit>
+			<trans-unit id="details" xml:space="preserve">
+        		<source>Details anzeigen</source>
+        		<target xml:lang="en">Show details</target>
+			</trans-unit>
+			<trans-unit id="close" xml:space="preserve">
+        		<source>Fenster schließen</source>
+        		<target xml:lang="en">Close overlay</target>
+			</trans-unit>
+			<trans-unit id="cookie-settings" xml:space="preserve">
+        		<source>Cookie-Einstellungen</source>
+        		<target xml:lang="en">Cookie settings</target>
+			</trans-unit>
+			<trans-unit id="all-opt-in" xml:space="preserve">
+        		<source>Alle Cookies akzeptieren</source>
+        		<target xml:lang="en">Accept all cookies</target>
+			</trans-unit>
+			<trans-unit id="statistic-opt-in" xml:space="preserve">
+        		<source>Cookies für Statistik-Zwecke akzeptieren</source>
+        		<target xml:lang="en">Accept cookies for statistical purposes</target>
+			</trans-unit>
+			<trans-unit id="necessary-opt-in" xml:space="preserve">
+        		<source>Nur notwendige Cookies akzeptieren</source>
+        		<target xml:lang="en">Accept only necessary cookies</target>
+			</trans-unit>
+			<trans-unit id="necessary-description" xml:space="preserve">
+        		<source>(Kann zu Einschränkungen bei Inhalten und Nutzungserlebnis führen)</source>
+        		<target xml:lang="en">(May lead to content and user experience restrictions)</target>
+			</trans-unit>
+			<trans-unit id="explainations" xml:space="preserve">
+        		<source>
+        		    <![CDATA[
+                        <p class="social-opt-in-subline">Notwendige Cookies</p>
+                        <p>Diese Cookies helfen dabei, unsere Webseite nutzbar zu machen, indem sie Grundfunktionen wie Seitennavigation und Zugriffe auf sichere Bereiche ermöglichen. Unsere Webseite kann ohne diese Cookies nicht richtig funktionieren.</p>
+                        <p class="social-opt-in-subline">Statistik-Cookies</p>
+                        <p>Diese Cookies helfen uns zu verstehen, wie Besucher mit unserer Webseite interagieren, indem Informationen anonym gesammelt werden. Mit diesen Informationen können wir unser Angebot laufend verbessern.</p>
+                        <p class="social-opt-in-subline">Marketing-Cookies</p>
+                        <p>Diese Cookies werden verwendet, um Besuchern auf Webseiten zu folgen. Die Absicht ist, Anzeigen zu zeigen, die relevant und ansprechend für den einzelnen Benutzer und daher wertvoller für Publisher und werbetreibende Drittparteien sind.</p>
+                   ]]>
+                </source>
+        		<target xml:lang="en">
+        		    <![CDATA[
+                        <p class="social-opt-in-subline">Necessary cookies</p>
+                        <p>These cookies help making a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.</p>
+                        <p class="social-opt-in-subline">Statistics cookies</p>
+                        <p>These cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously. With this information we can constantly improve the experience we offer on our website.</p>
+                        <p class="social-opt-in-subline">Marketing cookies</p>
+                        <p>These cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.</p>
+                     ]]>
+                 </target>
+			</trans-unit>
+			<trans-unit id="introduction" xml:space="preserve">
+        		<source>
+            		<![CDATA[
+                        <p class="social-opt-in-headline">Cookie-Einstellungen</p>
+                        <p>
+                            Wir nutzen Cookies, um Ihnen die bestmögliche Nutzung unserer Webseite zu ermöglichen und unsere Kommunikation mit Ihnen zu verbessern.
+                            Wir berücksichtigen Ihre Auswahl und verwenden nur die Daten, für die Sie uns Ihr Einverständnis geben.
+                        </p>
+                   ]]>
+                </source>
+        		<target xml:lang="en">
+            		<![CDATA[
+                        <p class="social-opt-in-headline">Cookie-Settings</p>
+                        <p>
+                            We use cookies to give you the best experience possible with our website and to improve our communication with you.
+                            We consider your selection and will only use the data you have approved us to gather.
+                        </p>
+                   ]]>
+                 </target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

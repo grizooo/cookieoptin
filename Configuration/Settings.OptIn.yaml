@@ -1,0 +1,10 @@
+Sitegeist:
+  CookieOptIn:
+    editable: true
+    socialTypes:
+      statistic: true
+      marketing: true
+    path:
+      dataprivacyUrl: '/'
+      imprintUrl:  '/'
+      cookieOverviewUrl:  '/'

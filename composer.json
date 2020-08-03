@@ -1,0 +1,19 @@
+{
+    "description": "Simply add opt in for google tag manager",
+    "type": "neos-plugin",
+    "name": "sitegeist/cookieoptin",
+    "require": {
+        "neos/neos": "*",
+        "neos/nodetypes": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sitegeist\\CookieOptIn\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Sitegeist.CookieOptIn"
+        }
+    }
+}

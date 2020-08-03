@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="Sitegeist.CookieOptIn" source-language="de" datatype="plaintext" target-language="de">
+		<body>
+			<trans-unit id="cookieoverview" xml:space="preserve">
+        		<target xml:lang="de">Eine Übersicht aller verwendeten Cookies finden Sie hier</target>
+			</trans-unit>
+			<trans-unit id="dataprivacy" xml:space="preserve">
+        		<target xml:lang="de">Datenschutz</target>
+			</trans-unit>
+			<trans-unit id="imprint" xml:space="preserve">
+        		<target xml:lang="de">Impressum</target>
+			</trans-unit>
+			<trans-unit id="details" xml:space="preserve">
+        		<target xml:lang="de">Details anzeigen</target>
+			</trans-unit>
+			<trans-unit id="close" xml:space="preserve">
+        		<target xml:lang="de">Fenster schließen</target>
+			</trans-unit>
+			<trans-unit id="cookie-settings" xml:space="preserve">
+        		<target xml:lang="de">Cookie-Einstellungen</target>
+			</trans-unit>
+			<trans-unit id="all-opt-in" xml:space="preserve">
+        		<target xml:lang="de">Alle Cookies akzeptieren</target>
+			</trans-unit>
+			<trans-unit id="statistic-opt-in" xml:space="preserve">
+        		<target xml:lang="de">Cookies für Statistik-Zwecke akzeptieren</target>
+			</trans-unit>
+			<trans-unit id="necessary-opt-in" xml:space="preserve">
+        		<target xml:lang="de">Nur notwendige Cookies akzeptieren</target>
+			</trans-unit>
+			<trans-unit id="necessary-description" xml:space="preserve">
+        		<target xml:lang="de">(Kann zu Einschränkungen bei Inhalten und Nutzungserlebnis führen)</target>
+			</trans-unit>
+			<trans-unit id="explainations" xml:space="preserve">
+        		<target xml:lang="de">
+            		<![CDATA[
+        		        <p class="social-opt-in-subline">Notwendige Cookies</p>
+                        <p>Diese Cookies helfen dabei, unsere Webseite nutzbar zu machen, indem sie Grundfunktionen wie Seitennavigation und Zugriffe auf sichere Bereiche ermöglichen. Unsere Webseite kann ohne diese Cookies nicht richtig funktionieren.</p>
+                        <p class="social-opt-in-subline">Statistik-Cookies</p>
+                        <p>Diese Cookies helfen uns zu verstehen, wie Besucher mit unserer Webseite interagieren, indem Informationen anonym gesammelt werden. Mit diesen Informationen können wir unser Angebot laufend verbessern.</p>
+                        <p class="social-opt-in-subline">Marketing-Cookies</p>
+                        <p>Diese Cookies werden verwendet, um Besuchern auf Webseiten zu folgen. Die Absicht ist, Anzeigen zu zeigen, die relevant und ansprechend für den einzelnen Benutzer und daher wertvoller für Publisher und werbetreibende Drittparteien sind.</p>
+                   ]]>
+        		</target>
+			</trans-unit>
+			<trans-unit id="introduction" xml:space="preserve">
+        		<target xml:lang="de">
+            		<![CDATA[
+                        <p class="social-opt-in-headline">Cookie-Einstellungen</p>
+                        <p>
+                            Wir nutzen Cookies, um Ihnen die bestmögliche Nutzung unserer Webseite zu ermöglichen und unsere Kommunikation mit Ihnen zu verbessern.
+                            Wir berücksichtigen Ihre Auswahl und verwenden nur die Daten, für die Sie uns Ihr Einverständnis geben.
+                        </p>
+                   ]]>
+        		</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

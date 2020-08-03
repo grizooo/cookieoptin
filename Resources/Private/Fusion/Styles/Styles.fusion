@@ -1,0 +1,4 @@
+prototype(Sitegeist.CookieOptIn:Styles) < prototype(Neos.Fusion:Template) {
+    templatePath = 'resource://Sitegeist.CookieOptIn/Private/Fusion/Styles/Styles.css'
+    @process.wrap = ${'<style>' + value + '</style>'}
+}

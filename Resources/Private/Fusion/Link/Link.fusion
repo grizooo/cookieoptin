@@ -1,0 +1,8 @@
+prototype(Sitegeist.CookieOptIn:Link) < prototype(Neos.Neos:ContentComponent) {
+    cookieSettingsText = ${Translation.translate('cookie-settings', '', [], 'Main', 'Sitegeist.CookieOptIn')}
+    renderer = afx`
+        <a href="javascript:void(0);" onclick="document.dispatchEvent(new KeyboardEvent('keydown',{'code':'KeyQ', 'ctrlKey' : true})); return false;">
+            {props.cookieSettingsText}
+        </a>
+    `
+}

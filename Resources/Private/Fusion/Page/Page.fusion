@@ -1,0 +1,16 @@
+prototype(Neos.Neos:Page) {
+    @cache {
+        entryIdentifier {
+            cookieContext = ${(Sitegeist.CookieOptIn.Check.necessary() + '-' + Sitegeist.CookieOptIn.Check.marketing() + '-' + Sitegeist.CookieOptIn.Check.statistic())}
+        }
+    }
+    optInOverlayStyles = Sitegeist.CookieOptIn:Styles {
+        @position = 'before closingHeadTag'
+    }
+    optInOverlay = Sitegeist.CookieOptIn:Overlay.Component{
+        @position = 'before closingBodyTag'
+    }
+    optInOverlayScript = Sitegeist.CookieOptIn:Script {
+        @position = 'before closingBodyTag'
+    }
+}

@@ -1,0 +1,4 @@
+prototype(Sitegeist.CookieOptIn:Script) < prototype(Neos.Fusion:Template) {
+    templatePath = 'resource://Sitegeist.CookieOptIn/Private/Fusion/Script/Script.js'
+    @process.wrap = ${'<script>' + value + '</script>'}
+}

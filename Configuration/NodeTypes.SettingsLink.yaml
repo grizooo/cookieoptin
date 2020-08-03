@@ -1,0 +1,9 @@
+'Sitegeist.CookieOptIn:Link':
+  superTypes:
+    'Neos.Neos:Content': TRUE
+  ui:
+    label: 'OptIn Settings Link'
+    group: 'general'
+    icon: icon-share
+    position: 820
+    reloadIfChanged: true
